@@ -3,4 +3,5 @@ class Post < ActiveRecord::Base
   has_many :comments, as: :commentable
   has_many :likes, as: :likeable
   has_many :dislikes, as: :dislikeable
+  validates_presence_of :user, :body
 end
