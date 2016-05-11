@@ -4,7 +4,8 @@ class CreateLikes < ActiveRecord::Migration
       t.string :likeable_type
       t.integer :likeable_id
       t.integer :user_id
-      t.integer :like
+      t.boolean :like
+
 
       t.timestamps null: false
     end

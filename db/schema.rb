@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160511110903) do
+ActiveRecord::Schema.define(version: 20160511110830) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -41,15 +41,6 @@ ActiveRecord::Schema.define(version: 20160511110903) do
     t.datetime "updated_at",       null: false
   end
 
-  create_table "dislikes", force: :cascade do |t|
-    t.string   "dislikeable_type"
-    t.integer  "dislikeable_id"
-    t.integer  "user_id"
-    t.integer  "dislike"
-    t.datetime "created_at",       null: false
-    t.datetime "updated_at",       null: false
-  end
-
   create_table "happenings", force: :cascade do |t|
     t.string   "title"
     t.text     "body"
@@ -61,7 +52,7 @@ ActiveRecord::Schema.define(version: 20160511110903) do
     t.string   "likeable_type"
     t.integer  "likeable_id"
     t.integer  "user_id"
-    t.integer  "like"
+    t.boolean  "like"
     t.datetime "created_at",    null: false
     t.datetime "updated_at",    null: false
   end
