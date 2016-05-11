@@ -1,5 +1,9 @@
 require 'rails_helper'
 
 RSpec.describe Happening, type: :model do
-  pending "add some examples to (or delete) #{__FILE__}"
+  describe "validations" do
+    it { is_expected.to have_many(:comments) }
+    it { is_expected.to have_many(:likes) }
+    it { is_expected.to have_many(:dislikes) }
+  end
 end
