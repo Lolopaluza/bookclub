@@ -5,7 +5,7 @@ class HappeningController < ApplicationController
     @happenings = Happening.all
 
     respond_to do |f|
-      f.json {render json: {happenings: @happenings} }
+      f.json { render json: { happenings: @happenings } }
     end
   end
 
@@ -13,7 +13,7 @@ class HappeningController < ApplicationController
     @happening = Happening.find(params[:id])
 
     respond_to do |f|
-      f.json {render json: {happening: @happenings} }
+      f.json { render json: { happening: @happenings } }
     end
   end
 end
