@@ -4,7 +4,7 @@ class CenturiesController < ApplicationController
     @centuries = Century.all
 
     respond_to do |f|
-      f.json {render json: {centuries: @centuries} }
+      f.json { render json: { centuries: @centuries} }
     end
   end
 
@@ -12,6 +12,6 @@ class CenturiesController < ApplicationController
     @century = Century.find( params[:id] )
 
     respond_to do |f|
-      f.json {render json: {century: @century} }
+      f.json { render json: { century: @century} }
   end
 end
