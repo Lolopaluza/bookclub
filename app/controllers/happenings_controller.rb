@@ -1,4 +1,5 @@
 class HappeningController < ApplicationController
+  mount_uploader :image, ImageUploader
 
   def index
     @happenings = Happening.all

@@ -19,5 +19,5 @@ Rails.application.routes.draw do
   post '/likes' => 'likes#create', as: :like_create
   post '/dislikes' => 'likes#dislike', as: :dislike_create
 
-  root 'home#index'
+  root 'century#index'
 end

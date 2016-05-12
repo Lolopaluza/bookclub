@@ -1,4 +1,6 @@
 class WrittenImportancesController < ApplicationController
+  mount_uploader :image, ImageUploader 
+
   def index
     @written_importances = WrittenImportances.all
 
