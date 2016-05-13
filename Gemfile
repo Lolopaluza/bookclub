@@ -35,7 +35,6 @@ gem "react_on_rails", "~> 5"
 group :development, :test do
   gem 'rspec-rails'
   gem 'shoulda-matchers'
-  gem 'factory_girl_rails'
   gem 'json_matchers'
 end
 
