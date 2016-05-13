@@ -35,6 +35,8 @@ gem "react_on_rails", "~> 5"
 group :development, :test do
   gem 'rspec-rails'
   gem 'shoulda-matchers'
+  gem 'factory_girl_rails'
+  gem 'json_matchers'
 end
 
 group :development do
@@ -44,3 +46,5 @@ group :development do
   gem 'rb-fsevent'
   gem 'terminal-notifier-guard'
 end
+
+gem 'rails_12factor', group: :production
